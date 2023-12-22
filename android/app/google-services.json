@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "218829284438",
+    "project_id": "rental-ps-app",
+    "storage_bucket": "rental-ps-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218829284438:android:b4e182d5618414f30687f7",
+        "android_client_info": {
+          "package_name": "com.example.game"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwVf9xmnae6nVyhIGv32zyErdOY8bfYFA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
