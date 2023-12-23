@@ -14,9 +14,9 @@ class _LoginOrRagisterState extends State<LoginOrRagister> {
   bool showLoginPage = true;
 
   // toggle between login and register page
-  void togglePages() {
+  void togglePages() { // untuk menjalankan tombol yg ditekan
     setState(() {
-      showLoginPage = !showLoginPage;
+      showLoginPage = !showLoginPage;// untuk memperbarui status showLoginPage sehingga halaman login atau register dapat berubah
     });
   }
 

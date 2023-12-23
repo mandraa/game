@@ -25,8 +25,8 @@ class MyApp extends StatelessWidget {
       home: const AuthPage(),
       theme: lightMode,
       darkTheme: darkMode,
-      routes: {
-        '/login_register': (context) => const LoginOrRagister(),
+      routes: { // menentukan routing dalam aplikasi
+        '/login_register': (context) => const LoginOrRagister(),// Menavigasi ke halaman utama
         '/home_page': (context) => const homes(),
         '/profile_page': (context) => ProfilePage(),
         '/users_page': (context) => const UsersPage(),

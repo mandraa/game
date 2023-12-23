@@ -70,7 +70,7 @@ class _ScanViewState extends State<ScanView> {
     _initializeCamera();
   }
 
-  Future<void> _initializeCamera() async {
+  Future<void> _initializeCamera() async { // untuk menginisialisasi kontrol kamera
     final cameras = await availableCameras();
     final firstCamera = cameras.first;
 
@@ -89,7 +89,7 @@ class _ScanViewState extends State<ScanView> {
   }
 
   @override
-  void dispose() {
+  void dispose() { // untuk memastikan bahwa kontrol kamera dihancurkan saat widget dihapus
     _controller?.dispose();
     super.dispose();
   }

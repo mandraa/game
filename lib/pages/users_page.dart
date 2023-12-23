@@ -11,22 +11,22 @@ class UsersPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.background,
-      body: StreamBuilder(
+      body: StreamBuilder( // untuk mendengarkan perubahan data di koleksi "Users" di Firebase Firestore.
         stream: FirebaseFirestore.instance.collection("Users").snapshots(),
         builder: (context, snapshot) {
           // any errors
-          if (snapshot.hasError) {
+          if (snapshot.hasError) { // menampilkan pesan kesalahan ke pengguna.
             displayMessageToUser("Something went wrong", context);
           }
 
           // show loading circle
-          if (snapshot.connectionState == ConnectionState.waiting) {
+          if (snapshot.connectionState == ConnectionState.waiting) { // menampilkan indikator loading 
             return const Center(
               child: CircularProgressIndicator(),
             );
           }
 
-          if (snapshot.data == null) {
+          if (snapshot.data == null) { // menampilkan teks "No Data"
             return const Text("No Data");
           }
 

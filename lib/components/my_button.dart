@@ -13,7 +13,7 @@ class MyButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
+    return GestureDetector(// untuk menangani aksi ketika tombol ditekan
       onTap: onTap,
       child: Container(
         decoration: BoxDecoration(

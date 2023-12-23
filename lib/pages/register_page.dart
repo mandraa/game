@@ -17,6 +17,7 @@ class RegisterPage extends StatefulWidget {
 
 class _RegisterPageState extends State<RegisterPage> {
   //Text controllers
+  // digunakan untuk mengendalikan nilai teks dalam empat bidang masukan
   final TextEditingController usernameController = TextEditingController();
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
@@ -46,7 +47,7 @@ class _RegisterPageState extends State<RegisterPage> {
       // try creating the user
       try {
         // create the user
-        UserCredential? userCredential =
+        UserCredential? userCredential = // sebagai argumen, yang berisi informasi tentang pengguna yang baru didaftarkan
             await FirebaseAuth.instance.createUserWithEmailAndPassword(
           email: emailController.text,
           password: passwordController.text,
@@ -59,7 +60,7 @@ class _RegisterPageState extends State<RegisterPage> {
         if (context.mounted) Navigator.pop(context);
       } on FirebaseAuthException catch (e) {
         // pop loading circle
-        Navigator.pop(context);
+        Navigator.pop(context);// digunakan untuk melakukan navigasi kembali 
 
         // display error message to user
         displayMessageToUser(e.code, context);

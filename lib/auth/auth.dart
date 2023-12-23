@@ -10,16 +10,17 @@ class AuthPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: StreamBuilder(
+        // untuk mendengarkan perubahan status otentikasi Firebase.
         stream: FirebaseAuth.instance.authStateChanges(),
         builder: (context, snapshot) {
           // user is logged in
           if (snapshot.hasData) {
-            return const homes();
+            return const homes(); // pengguna akn dikembalikan ke widget home
           }
 
           // user is NOT logged in
           else {
-            return const LoginOrRagister();
+            return const LoginOrRagister(); // pengguna akn dikembalikan ke widget login atau register
           }
         },
       ),
