@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:game/pages/camera_page.dart';
+import 'package:game/pages/scan_view.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class pinjam_field extends StatefulWidget {
@@ -51,7 +51,7 @@ class _pinjam_fieldState extends State<pinjam_field> {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => OCRPage()),
+                        MaterialPageRoute(builder: (context) => ScanView()),
                       );
                     },
                     child: Text(
