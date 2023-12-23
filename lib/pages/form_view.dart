@@ -106,6 +106,7 @@ class _FormPageState extends State<FormPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Form KTP'),
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
       body: Padding(
         padding: EdgeInsets.all(20.0),
@@ -136,6 +137,9 @@ class _FormPageState extends State<FormPage> {
                 // For now, let's navigate back to the previous screen
                 Navigator.pop(context);
               },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+              ),
               child: Text('Submit Form'),
             ),
           ],

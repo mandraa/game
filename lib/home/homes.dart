@@ -143,7 +143,7 @@ class homes extends StatelessWidget {
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
-                                SizedBox(width: 98),
+                                SizedBox(width: 100),
                                 Icon(
                                   Icons.menu,
                                   color: Colors.black,

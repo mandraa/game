@@ -168,7 +168,7 @@ class _playstationState extends State<playstation> {
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
-                                SizedBox(width: 65),
+                                SizedBox(width: 70),
                                 GestureDetector(
                                   onTap: () {
                                     Navigator.push(
@@ -286,7 +286,7 @@ class _playstationState extends State<playstation> {
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
-                                SizedBox(width: 50),
+                                SizedBox(width: 55),
                                 GestureDetector(
                                   onTap: () {
                                     Navigator.push(
