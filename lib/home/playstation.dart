@@ -50,7 +50,7 @@ class _playstationState extends State<playstation> {
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
-                                SizedBox(width: 95),
+                                SizedBox(width: 120),
                                 GestureDetector(
                                   onTap: () {
                                     Navigator.push(
@@ -109,7 +109,7 @@ class _playstationState extends State<playstation> {
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
-                                SizedBox(width: 95),
+                                SizedBox(width: 120),
                                 GestureDetector(
                                   onTap: () {
                                     Navigator.push(
@@ -168,7 +168,7 @@ class _playstationState extends State<playstation> {
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
-                                SizedBox(width: 38),
+                                SizedBox(width: 65),
                                 GestureDetector(
                                   onTap: () {
                                     Navigator.push(
@@ -227,7 +227,7 @@ class _playstationState extends State<playstation> {
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
-                                SizedBox(width: 93),
+                                SizedBox(width: 120),
                                 GestureDetector(
                                   onTap: () {
                                     Navigator.push(
@@ -286,7 +286,7 @@ class _playstationState extends State<playstation> {
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
-                                SizedBox(width: 20),
+                                SizedBox(width: 50),
                                 GestureDetector(
                                   onTap: () {
                                     Navigator.push(

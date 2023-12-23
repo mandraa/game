@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:game/components/my_drawer.dart';
 import 'package:game/home/playstation.dart';
 
-
 class homes extends StatelessWidget {
   const homes({super.key});
 
@@ -48,7 +47,7 @@ class homes extends StatelessWidget {
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
-                                SizedBox(width: 80),
+                                SizedBox(width: 120),
                                 GestureDetector(
                                   onTap: () {
                                     Navigator.push(
@@ -101,7 +100,7 @@ class homes extends StatelessWidget {
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
-                                SizedBox(width: 75),
+                                SizedBox(width: 115),
                                 Icon(
                                   Icons.menu,
                                   color: Colors.black,
@@ -144,7 +143,7 @@ class homes extends StatelessWidget {
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
-                                SizedBox(width: 58),
+                                SizedBox(width: 98),
                                 Icon(
                                   Icons.menu,
                                   color: Colors.black,

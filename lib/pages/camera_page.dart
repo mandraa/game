@@ -87,6 +87,7 @@ class _OCRPageState extends State<OCRPage> {
             Scaffold(
               appBar: AppBar(
                 title: const Text('Text Recognition Sample'),
+                backgroundColor: Theme.of(context).colorScheme.inversePrimary,
               ),
               backgroundColor: _isPermissionGranted ? Colors.transparent : null,
               body: _isPermissionGranted
